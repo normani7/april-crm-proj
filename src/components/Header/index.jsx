@@ -1,27 +1,22 @@
 import { Button } from 'primereact/button';
 import React, { useState } from "react"; 
 import { Menubar } from 'primereact/menubar';
-import { MenuSidebar } from '../SideBar/index.jsx';
-import { HEADER_NAV_ITEMS } from './constants';       
+import { MenuSidebar } from '../SideBar/index.jsx';      
 import './index.css';
-import { DataView } from 'primereact/dataview';
 
 
 const Header = () => {
     
-    const [IsOpenMenu, setIsOpenMenu] = useState(false)
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
 
-    const handleclick = () =>{
-        setIsOpenMenu()
-    }
 
-    const onClick = () => {
+    const openSideBar = () => {
+        setIsOpenMenu(true)
         console.log('Logout');
     }
     
     const LogoutButtonTemplate = (
         <Button  
-            onClick={onClick}
             rounded
             icon="pi pi-sign-out"
             severity="help"
@@ -32,7 +27,7 @@ const Header = () => {
             text
             rounded
             icon="pi pi-bars"
-            onClick={onClick}
+            onClick={openSideBar}
         />
     )
 
@@ -45,7 +40,7 @@ const Header = () => {
                     end={LogoutButtonTemplate} 
                 />
             </div>
-            <MenuSidebar visible={IsOpenMenu} setIsOpenMenu={setIsOpenMenu}
+            <MenuSidebar visible={isOpenMenu} setVisiable={setIsOpenMenu}
             />
         </header>
         </>

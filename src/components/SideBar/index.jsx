@@ -1,20 +1,26 @@
 import { Sidebar } from 'primereact/sidebar';
+import { Menu } from 'primereact/menu';
+import { SIDEBAR_MENU_ITEMS } from './constants';
 
-export const MenuSidebar = ({ visible, IsOpenMenu }) => {
+
+export const MenuSidebar = ({ visible, setVisiable }) => {
+
 
 
     return (
 
         <Sidebar
             visible={visible}
-            onHide={() => setIsOpenMenu()}
+            onHide={() => setVisiable(false)}
         >
             <h2>Sidebar</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                et dolore magna aliqua.  
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div className="card flex justify-content-center">
+                    <Menu model={SIDEBAR_MENU_ITEMS} />
+                </div>
+
             </p>
         </Sidebar>
     );
 };
+

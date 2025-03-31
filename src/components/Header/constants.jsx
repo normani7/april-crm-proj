@@ -14,50 +14,52 @@ const itemRenderer = (item) => (
     </NavLink>
 );
 
-export const HEADER_NAV_ITEMS = [
+// export const HEADER_NAV_ITEMS = [
     
-    {
-        label: 'Home',
-        icon: 'pi pi-home'
-    },
-    {
-        label: 'TODO LIST',
-        icon: 'pi pi-home'
-    },
-    {
-        label: "Access Control",
-        icon: 'pi pi-shield',
-        items: [
-            {
-                label: 'Users',
-                icon: 'pi pi-user',
-                path: '/users',
-                template: itemRenderer,
-            },
-            {
-                label: 'Settings',
-                icon: 'pi pi-cog',
-                path: '/settings',
-                template: itemRenderer,
-            }
-        ]
-    },
-    {
-        label: "Anilibria",
-        icon: 'pi pi-shield',
-        items: [
-            {
-                label: 'Users',
-                icon: 'pi pi-user',
-                path: '/users',
-                template: itemRenderer,
-            },
-            {
-                label: 'Settings',
-                icon: 'pi pi-cog',
-                path: '/settings',
-                template: itemRenderer,
-            }
-        ]
-    },
-];
+//     {
+//         label: 'Home',
+//         icon: 'pi pi-home'
+//     },
+//     {
+//         label: 'TODO LIST',
+//         icon: 'pi pi-home'
+//     },
+//     {
+//         label: "Access Control",
+//         icon: 'pi pi-shield',
+//         items: [
+//             {
+//                 label: 'Users',
+//                 icon: 'pi pi-user',
+//                 path: '/users',
+//                 template: itemRenderer,
+//             },
+//             {
+//                 label: 'Settings',
+//                 icon: 'pi pi-cog',
+//                 path: '/settings',
+//                 template: itemRenderer,
+//             }
+//         ]
+//     },
+//     {
+//         label: "Anilibria",
+//         icon: 'pi pi-shield',
+//         items: [
+//             {
+//                 label: 'Users',
+//                 icon: 'pi pi-user',
+//                 path: '/users',
+//                 template: itemRenderer,
+//             },
+//             {
+//                 label: 'Settings',
+//                 icon: 'pi pi-cog',
+//                 path: '/settings',
+//                 template: itemRenderer,
+//             }
+//         ]
+//     },
+// ];
+
+        
