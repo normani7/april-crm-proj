@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'primereact/card';
 
-export const BasicDemo = () => {
+export const MainPage = () => {
     return (
         <Card title="Simple Card">
             <p>
@@ -11,5 +11,7 @@ export const BasicDemo = () => {
         </Card>
     );
 };
+
+// For Example
 
         

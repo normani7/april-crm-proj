@@ -4,6 +4,34 @@ export const SIDEBAR_MENU_ITEMS = [
         url:"/"
 
     },
+    {
+        label:"Access Control",
+        items:[
+            {
+                label:"Users",
+                url:"/users"
+            },
+            {
+                label:"Settings",
+                url:"/settings"
+            },
+
+        ]
+    },
+    {
+        label:"Anilibria",
+        url:"/anilibria"
+
+
+        // label:"Anilibria",
+        // items:[
+        //     {
+                
+        //     }
+        // ]
+
+    },
+]
     // {
     //     label: "Access Control",
     //     // icon: 'pi pi-shield',
@@ -26,4 +54,3 @@ export const SIDEBAR_MENU_ITEMS = [
     //     items: [
     //     ]
     // },
-]

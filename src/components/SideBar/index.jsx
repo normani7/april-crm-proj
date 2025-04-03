@@ -14,12 +14,12 @@ export const MenuSidebar = ({ visible, setVisiable }) => {
             onHide={() => setVisiable(false)}
         >
             <h2>Sidebar</h2>
-            <p>
+            <div>
             <div className="card flex justify-content-center">
                     <Menu model={SIDEBAR_MENU_ITEMS} />
                 </div>
 
-            </p>
+            </div>
         </Sidebar>
     );
 };
