@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../../pages/Login";
-import {MainPage} from "../../pages/MainPage";
+import { MainPage } from "../../pages/MainPage";
 import DefaultLayout from "../../layout/DefaultLayout";
 import accessControl from "./page/accessControl";
-import { Anilibria } from "../../entities/anilibria";
+import { Anilibria } from "../../pages/Anilibria";
+
 
 
 const router = createBrowserRouter([
@@ -21,10 +22,10 @@ const router = createBrowserRouter([
                 element: <MainPage/>
             },
             ...accessControl,
-            // {
-            //     path: '/anilibria',
-            //     element: <Anilibria />,
-            // }
+            {
+                path: '/anilibria',
+                element: <Anilibria />,
+            }
         ]
     }
 ])

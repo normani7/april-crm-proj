@@ -1,1 +1,2 @@
-export * from './api/animeService';
+export { Anilibria } from "./index.jsx";
+ 

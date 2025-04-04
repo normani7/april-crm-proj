@@ -3,7 +3,7 @@ import { Menu } from 'primereact/menu';
 import { SIDEBAR_MENU_ITEMS } from './constants';
 
 
-export const MenuSidebar = ({ visible, setVisiable }) => {
+export const MenuSidebar = ({ visible, setVisible }) => {
 
 
 
@@ -11,7 +11,7 @@ export const MenuSidebar = ({ visible, setVisiable }) => {
 
         <Sidebar
             visible={visible}
-            onHide={() => setVisiable(false)}
+            onHide={() => setVisible(false)}
         >
             <h2>Sidebar</h2>
             <div>
