@@ -40,7 +40,7 @@ const Header = () => {
                     end={LogoutButtonTemplate} 
                 />
             </div>
-            <MenuSidebar visible={isOpenMenu} setVisible={setIsOpenMenu}
+            <MenuSidebar visible={isOpenMenu} setVisiable={setIsOpenMenu}
             />
         </header>
         </>
